@@ -1,0 +1,6 @@
+@DDDWebApi_HostAddress = http://localhost:5252
+
+GET {{DDDWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
