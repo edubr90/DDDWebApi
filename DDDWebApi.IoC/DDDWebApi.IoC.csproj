@@ -7,10 +7,13 @@
  <ItemGroup>
    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0" />
    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+   <PackageReference Include="AutoMapper" Version="12.0.1" />
+   <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
  </ItemGroup>
  <ItemGroup>
- <ProjectReference Include="..\DDDWebApi.Application\DDDWebApi.Application.csproj" />
  <ProjectReference Include="..\DDDWebApi.Domain\DDDWebApi.Domain.csproj" />
+ <ProjectReference Include="..\DDDWebApi.Application\DDDWebApi.Application.csproj" />
  <ProjectReference Include="..\DDDWebApi.Infrastructure\DDDWebApi.Infrastructure.csproj" />
+ <ProjectReference Include="..\DDDWebApi.CrossCutting\DDDWebApi.CrossCutting.csproj" />
  </ItemGroup>
 </Project>

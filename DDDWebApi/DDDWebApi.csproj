@@ -8,10 +8,17 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DDDWebApi.Domain\DDDWebApi.Domain.csproj" />
     <ProjectReference Include="..\DDDWebApi.IoC\DDDWebApi.IoC.csproj" />
+    <ProjectReference Include="..\DDDWebApi.CrossCutting\DDDWebApi.CrossCutting.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
   </ItemGroup>
 
 </Project>

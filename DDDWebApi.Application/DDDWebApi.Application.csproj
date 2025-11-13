@@ -5,6 +5,10 @@
  <ImplicitUsings>enable</ImplicitUsings>
  </PropertyGroup>
  <ItemGroup>
+ <PackageReference Include="AutoMapper" Version="12.0.1" />
+ <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+ </ItemGroup>
+ <ItemGroup>
  <ProjectReference Include="..\DDDWebApi.Domain\DDDWebApi.Domain.csproj" />
  </ItemGroup>
 </Project>

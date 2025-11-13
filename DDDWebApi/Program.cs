@@ -1,4 +1,5 @@
 using DDDWebApi.IoC;
+using DDDWebApi.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,8 @@ builder.Services.AddApplicationIoC();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseExceptionHandling();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
